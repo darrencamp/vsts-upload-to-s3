@@ -1,0 +1,49 @@
+{
+  "manifestVersion": 1,
+  "id": "build-task",
+  "name": "Upload to Amazon s3",
+  "version": "0.0.1",
+  "publisher": "mattlabrum",
+  "public": true,
+  "targets": [
+	{
+	  "id": "Microsoft.VisualStudio.Services"
+	}
+  ],
+  "description": "Upload to Amazon S3",
+  "categories": [
+	"Build and release"
+  ],
+  "scopes": [
+	"vso.build"
+  ],
+  "icons": {
+	"default": "images/extension-icon.png"
+  },
+  "content": {
+	"details": {
+	  "path": "readme.md"
+	}
+  },
+  "repository": {
+	"type": "git",
+	"uri": "https://github.com/mlabrum/vsts-upload-to-s3"
+  },
+  "files": [
+	{
+	  "path": "buildtask"
+	}
+  ],
+  "contributions": [
+	{
+	  "id": "custom-build-task",
+	  "type": "ms.vss-distributed-task.task",
+	  "targets": [
+		"ms.vss-distributed-task.tasks"
+	  ],
+	  "properties": {
+		"name": "buildtask"
+	  }
+	}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "5d6e6f0f-db83-4e69-be7b-f3e2371450b6",
+  "name": "uploadToS3",
+  "friendlyName": "Upload to Amazon S3",
+  "description": "Uploads a file to Amazon S3",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Matt Labrum",
+  "version": {
+	"Major": 0,
+	"Minor": 0,
+	"Patch": 3
+  },
+  "instanceNameFormat": "Upload to S3 $(fileInput)",
+  "groups": [],
+  "inputs": [
+	{
+	  "name": "targetFile",
+	  "type": "filePath",
+	  "label": "Target path folder",
+	  "defaultValue": "",
+	  "required": true,
+	  "helpMarkDown": "folder to download the file to"
+	},
+	{
+	  "name": "bucketName",
+	  "type": "string",
+	  "label": "bucket name",
+	  "defaultValue": "",
+	  "required": false,
+	  "helpMarkDown": "S3 Bucket to upload to"
+	},
+	{
+	  "name": "bucketKey",
+	  "type": "string",
+	  "label": "Bucket Key",
+	  "defaultValue": "",
+	  "required": false,
+	  "helpMarkDown": "Path to store the file"
+	}
+  ],
+  "execution": {
+	"Node": {
+	  "target": "index.js"
+	}
+  }
+}

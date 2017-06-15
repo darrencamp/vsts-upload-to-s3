@@ -1,0 +1,19 @@
+{
+  "name": "vs-upload-to-s3",
+  "version": "1.0.0",
+  "description": "Uploads a file to s3",
+  "main": "index.js",
+  "scripts": {
+    "build": "tfx extension create --manifest-globs vss-extension.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlabrum/vsts-upload-to-s3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlabrum/vsts-upload-to-s3/issues"
+  },
+  "homepage": "https://github.com/mlabrum/vsts-upload-to-s3#readme"
+}
